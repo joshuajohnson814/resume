@@ -1,6 +1,7 @@
 {
   "name": "joshuajohnson-resume",
   "version": "1.0.0",
+  "description": "Online resume for Joshua Johnson (Chandler, AZ)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
