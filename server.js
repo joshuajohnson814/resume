@@ -2,14 +2,15 @@
 
 var express = require('express');
 var app = express();
-
-var port = process.env.PORT || 8080;
+var gzippo = require('gzippo');
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-app.use(express.static(__dirname + '/dist'));
+app.use(gzippo.staticGzip('' + __dirname + '/dist'));
 
 app.get('/', function(req, res) {
   res.render('index');
 });
+
+app.listen(process.env.PORT || 5000);
