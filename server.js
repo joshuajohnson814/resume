@@ -9,7 +9,7 @@ app.set('view engine', 'html');
 
 app.use(gzippo.staticGzip('' + __dirname + '/dist'));
 
-app.get('/', function(req, res) {
+app.get('/*', function(req, res) {
   res.render('index');
 });
 
