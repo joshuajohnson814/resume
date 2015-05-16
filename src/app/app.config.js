@@ -4,7 +4,7 @@
   angular.module('app').config(config);
 
   function config($urlRouterProvider, $locationProvider) {
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/resume');
     $locationProvider.html5Mode(true).hashPrefix('!');
   }
 })();

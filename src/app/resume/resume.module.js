@@ -6,9 +6,14 @@
   function routes($stateProvider) {
     $stateProvider
       .state('resume', {
-        url: '/',
+        url: '/resume',
         title: 'Resume: Joshua Johnson',
-        templateUrl: 'app/resume/main.html'
+        templateUrl: 'app/resume/resume.html'
+      })
+      .state('resume.about', {
+        url: '/about',
+        title: 'About Me: Joshua Johnson',
+        templateUrl: 'app/resume/about.html'
       });
   }
 
