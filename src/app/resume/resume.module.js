@@ -6,7 +6,7 @@
   function routes($stateProvider) {
     $stateProvider
       .state('resume', {
-        url: '/resume',
+        url: '/',
         title: 'Resume: Joshua Johnson',
         templateUrl: 'app/resume/main.html'
       });
