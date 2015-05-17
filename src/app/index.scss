@@ -4,20 +4,44 @@ html {
   font-family: 'RobotoDraft','Roboto',sans-serif
 }
 
-md-toolbar.md-default-theme {
-  background-color: black;
+.md-toolbar-tools {
+  font-size: 20px;
+
+  >.md-button {
+    font-size: 24px;
+    margin-right: 8px;
+  }
 }
 
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
+.md-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+md-sidenav {
+  background-color: #f9f9f9 !important;
+}
+
+md-content.md-default-theme {
+  background-color: inherit;
+}
+
+md-content.doc-content {
+  padding: 16px;
+}
+
+// About
+section.about {
   text-align: center;
 
-  color: white;
+  .md-avatar {
+    height: 80px;
+    width: 80px;
+  }
 
-  h1 {
-    font-size: 3em;
+  h4 {
+    margin: 0 0 5px;
   }
 }
 

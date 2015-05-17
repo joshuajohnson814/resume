@@ -1,14 +1,23 @@
-<div layout="vertical" layout-fill>
-
-  <md-content>
-    <header ng-include="'app/components/navbar/navbar.html'"></header>
-
-    <section class="jumbotron">
-      <h1>Joshua Johnson</h1>
-    </section>
-
-    <div ui-view></div>
-
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left"
+            md-is-locked-open="$mdMedia('gt-md')">
+  <md-content layout-padding>
+    <md-list>
+      <md-item ui-sref="resume.about">
+        <img ng-src="assets/images/avatar.png" class="md-avatar" />
+        <p>About Me</p>
+      </md-item>
+    </md-list>
   </md-content>
+</md-sidenav>
 
+<div layout="column" layout-fill layout-align="top center">
+  <md-toolbar class="md-theme-indigo md-toolbar-tools">
+    <md-button class="md-icon-button md-default-theme" hide-gt-md ng-click="vm.toggleNav()">
+      <i class="fa fa-bars"></i>
+    </md-button>
+    <h2>Joshua Johnson</h2>
+  </md-toolbar>
+  <md-content layout-padding class="doc-content">
+    <div ui-view></div>
+  </md-content>
 </div>
