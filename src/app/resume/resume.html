@@ -2,10 +2,30 @@
             md-is-locked-open="$mdMedia('gt-md')">
   <md-content layout-padding>
     <md-list>
-      <md-item ui-sref="resume.about">
-        <img ng-src="assets/images/avatar.png" class="md-avatar" />
+      <md-list-item ng-click="vm.goToNav('resume.about')">
+        <img ng-src="assets/images/avatar.png" class="md-avatar">
         <p>About Me</p>
-      </md-item>
+      </md-list-item>
+
+      <md-list-item ng-click="vm.goToNav('resume.skills')">
+        <i class="fa fa-html5"></i>
+        <p>Technical Skills</p>
+      </md-list-item>
+
+      <md-list-item ng-click="vm.goToNav('resume.experience')">
+        <i class="fa fa-server"></i>
+        <p>Experience</p>
+      </md-list-item>
+
+      <md-list-item ng-click="vm.goToNav('resume.education')">
+        <i class="fa fa-graduation-cap"></i>
+        <p>Education</p>
+      </md-list-item>
+
+      <md-list-item ng-click="vm.goToNav('resume.contact')">
+        <i class="fa fa-phone"></i>
+        <p>Contact</p>
+      </md-list-item>
     </md-list>
   </md-content>
 </md-sidenav>
