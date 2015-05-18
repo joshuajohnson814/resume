@@ -1,0 +1,77 @@
+html {
+  font-family: 'RobotoDraft','Roboto',sans-serif
+}
+
+textarea {
+  height: 150px !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.md-toolbar-tools {
+  font-size: 20px;
+
+  >.md-button {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+}
+
+.md-button {
+  .fa {
+    font-size: 26px;
+  }
+
+  &.md-primary.md-default-theme {
+    background-color: #1eb7b8 !important;
+  }
+
+  &.md-fab {
+    padding-top: 3px !important;
+  }
+}
+
+md-toolbar.md-default-theme {
+  background-color: #1eb7b8;
+}
+
+md-sidenav {
+  background-color: #f9f9f9 !important;
+
+  md-content {
+    padding-top: 0 !important;
+  }
+}
+
+md-content.md-default-theme {
+  background-color: inherit;
+}
+
+md-content.doc-content {
+  padding: 16px;
+}
+
+md-list {
+  md-list-item:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+.md-list-item-inner {
+  > .fa {
+    font-size: 34px;
+    margin: 8px 0 8px 5px;
+    width: 60px;
+  }
+}
+
+.md-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+footer {
+
+}

@@ -1,3 +1,34 @@
 <section class="contact">
-  Contact
+  <h2>Send me a message</h2>
+
+  <form name="contactForm" novalidate ng-submit="vm.sendMessage(contactForm.$valid)">
+    <md-input-container flex>
+      <label>Name</label>
+      <input type="text" required name="name" ng-model="vm.contact.name">
+
+      <div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$invalid && contactForm.$submitted">
+        <div ng-message="required">Please enter your name</div>
+      </div>
+    </md-input-container>
+
+    <md-input-container flex>
+      <label>Email</label>
+      <input type="email" required name="email" ng-model="vm.contact.email">
+
+      <div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$invalid && contactForm.$submitted">
+        <div ng-message="email">Please enter your email</div>
+      </div>
+    </md-input-container>
+
+    <md-input-container flex>
+      <label>Message</label>
+      <textarea md-maxlength="1000" required name="message" ng-model="vm.contact.message"></textarea>
+
+      <div ng-messages="contactForm.message.$error" ng-show="contactForm.message.$invalid && contactForm.$submitted">
+        <div ng-message="required">Please enter your message</div>
+      </div>
+    </md-input-container>
+
+    <md-button type="submit" class="md-raised md-primary">Send</md-button>
+  </form>
 </section>
