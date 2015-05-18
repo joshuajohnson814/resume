@@ -36,12 +36,12 @@
         header: 'Education',
         templateUrl: 'app/resume/pages/education.html'
       })
-      .state('resume.contact', {
+      /*.state('resume.contact', {
         url: '/contact',
         title: 'Contact: Joshua Johnson',
         header: 'Contact',
         templateUrl: 'app/resume/pages/contact.html'
-      });
+      })*/;
   }
 
 })();
