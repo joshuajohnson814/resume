@@ -1,0 +1,30 @@
+.skills {
+  md-toolbar.md-default-theme {
+    background-color: #4c545a !important;
+    max-height: 50px;
+    min-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .skill {
+    margin-bottom: 60px;
+
+    span, .fa {
+      padding-right: 16px;
+      width: 60px;
+    }
+
+    .fa {
+      font-size: 40px;
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .md-bar1 {
+      background-color: transparent !important;
+    }
+  }
+}
