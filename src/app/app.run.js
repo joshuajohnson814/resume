@@ -10,5 +10,10 @@
 
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
+
+    $rootScope.$on('$stateChangeSuccess', function(event, toState) {
+      $rootScope.title = toState.title || 'Joshua Johnson';
+      $rootScope.header = toState.header || 'Resume';
+    });
   }
 })();
